@@ -96,6 +96,12 @@ PLATFORM_VERSION := 16.1.0
 # QCOM Decryption
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
+# Crypto
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+TARGET_HW_DISK_ENCRYPTION := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE :=
+
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
