@@ -10,6 +10,10 @@ DEVICE_PATH := device/hmd/AOP_sprout
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
