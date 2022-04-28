@@ -9,6 +9,7 @@ LOCAL_PATH := device/hmd/AOP_sprout
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+ENABLE_VIRTUAL_AB := true
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
