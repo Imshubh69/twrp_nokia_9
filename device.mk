@@ -5,30 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-<<<<<<< HEAD
 LOCAL_PATH := device/hmd/AOP_sprout
-=======
-# Enable project quotas and casefolding for emulated storage without sdcardfs
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Enable virtual A/B OTA
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
-# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
-LOCAL_PATH := device/xiaomi/mojito
-
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# API
-PRODUCT_SHIPPING_API_LEVEL := 30
-
->>>>>>> 80f693b (mojito: Add Dynamic Partition Flag)
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
